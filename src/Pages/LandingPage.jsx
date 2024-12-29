@@ -1,6 +1,7 @@
 import ContactSection from "@/AllComponents/ContactSection";
-import { ExpereinceSection } from "@/AllComponents/ExpereinceSection";
+import { ExperienceSection } from "@/AllComponents/ExpereinceSection";
 import HeroSection from "@/AllComponents/HeroSection";
+import ProjectSection from "@/AllComponents/ProjectSection";
 
 import SkillSection from "@/AllComponents/SkillSection";
 import HeaderAdjustment from "@/common/HeaderAdjustment";
@@ -14,7 +15,8 @@ const LandingPage = () => {
     <div className=" w-full">
       <HeaderAdjustment />
       <HeroSection />
-      <ExpereinceSection />
+      <ExperienceSection />
+      <ProjectSection />
       <SkillSection />
       <ContactSection />
     </div>

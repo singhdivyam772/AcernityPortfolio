@@ -11,12 +11,7 @@ const transition = {
   restSpeed: 0.001,
 };
 
-export const MenuItem = ({
-  setActive,
-  active,
-  item,
-  children,
-}) => {
+export const MenuItem = ({ setActive, active, item, children }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
       <motion.p
@@ -61,12 +56,7 @@ export const Menu = ({ setActive, children }) => {
   );
 };
 
-export const ProductItem = ({
-  title,
-  description,
-  href,
-  src,
-}) => {
+export const ProductItem = ({ title, description, href, src }) => {
   return (
     <Link to={href} className="flex space-x-2">
       <img
@@ -77,24 +67,13 @@ export const ProductItem = ({
         className="flex-shrink-0 rounded-md shadow-2xl"
       />
       <div>
-        <h4 className="text-xl font-bold mb-1 text-white">
-          {title}
-        </h4>
-        <p className=" text-sm max-w-[10rem] text-neutral-300">
-          {description}
-        </p>
+        <h4 className="text-xl font-bold mb-1 text-white">{title}</h4>
+        <p className=" text-sm max-w-[10rem] text-neutral-300">{description}</p>
       </div>
     </Link>
   );
 };
 
 export const HoveredLink = ({ children, ...rest }) => {
-  return (
-    <Link
-      {...rest}
-      className=" text-neutral-200 hover:text-black"
-    >
-      {children}
-    </Link>
-  );
+  return <Link {...rest}>{children}</Link>;
 };

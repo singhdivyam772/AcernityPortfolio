@@ -17,7 +17,7 @@ const ContactSection = () => {
 
   return (
     <div className="md:px-20 px-4 md:pb-20 md:pt-8 ">
-      <p className=" text-white hidden md:flex  lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
+      <p className=" text-blue-500 hidden md:flex  lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
         Contact Us
       </p>
       <div className="max-w-3xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input  shadow-xl shadow-blue-400  bg-black">

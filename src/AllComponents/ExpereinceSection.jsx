@@ -2,11 +2,11 @@ import React from "react";
 
 import { twMerge } from "tailwind-merge";
 
-export function ExpereinceSection() {
+export function ExperienceSection() {
   return (
-    <div className="md:px-20 px-4 pb-20 pt-8 ">
-      <p className=" text-white lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
-        Expreicne
+    <div className="md:px-20 px-4 pb-20 pt-8">
+      <p className="text-blue-500 lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
+        Experience
       </p>
       <div className="w-full min-h-[20rem] mx-auto flex lg:flex-row flex-col justify-around pt-4 relative">
         {dummyContent.map((item, index) => (
@@ -18,7 +18,7 @@ export function ExpereinceSection() {
               {item.title}
             </p>
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm prose prose-sm dark:prose-invert">
               {item?.image && (
                 <img
                   src={item.image}
@@ -40,18 +40,22 @@ export function ExpereinceSection() {
 const dummyContent = [
   {
     title:
-      "Synergy Labs Technology Pvt. Ltd. (May 2024 – October 2024) Trainee ",
+      "Synergy Labs Technology Pvt. Ltd. (May 2024 – October 2024) Trainee",
     description: (
-      <p className=" text-white">
-        Sit duis est minim proident non nisi velit non consectetur. Esse
-        adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-        Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-        incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-        fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-        nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-        occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-        officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-        commodo et labore dolore commodo pariatur.
+      <p className="text-white">
+        <span className=" font-bold underline text-lg">Dream Den:</span>
+        {"  "}
+        Developed a user module and superadmin CRM using Ant Design. The user
+        module facilitates image uploads of home or office interiors and
+        provides interior design improvement suggestions, utilizing Axios and
+        React Query for API requests.
+        <br /> <span className=" font-bold underline text-lg">
+          IPSAA ERP:
+        </span>{" "}
+        Built and maintained a standalone React project from scratch. Leveraged
+        Material-UI for responsive design, React Query for efficient API
+        handling, and react-router-dom for seamless navigation, enhancing both
+        user experience and performance.
       </p>
     ),
     image:
@@ -62,23 +66,22 @@ const dummyContent = [
       "Indian Robotics Solution (IRS) (November 2023 – March 2024) INTERNSHIP",
     description: (
       <>
-        <p className=" text-white">
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+        <p className="text-white">
+          <span className=" font-bold underline text-lg">ERP PROJECT:</span>{" "}
+          Focused on inventory management and R&D project tracking modules,
+          built from scratch using ReactJS and Material-UI. Utilized Redux for
+          state management and RTK Query for seamless API interactions across
+          the ERP system.
         </p>
-        <p className=" text-white">
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
+        <p className="text-white">
+          <span className=" font-bold underline text-lg">HR PROJECT: </span>{" "}
+          Contributed to employee management features, integrating Aadhaar-based
+          details and OTP verification through APIs. Built using ReactJS and
+          styled with Tailwind CSS for a responsive and visually appealing
+          interface.
         </p>
       </>
     ),
-
     image:
       "https://indianroboticssolution.com/_next/image?url=https%3A%2F%2Fik.imagekit.io%2Fz7h0zeety%2FIndian%2520Robotics%2520Solution%2FIRS-Images%2FIRSLogo.png%3FupdatedAt%3D1718085269333&w=64&q=75",
   },

@@ -2,7 +2,7 @@
 import React from "react";
 import "./index.css";
 import { NavbarDemo } from "./AllComponents/Navbar";
-import Footer from "./AllComponents/Footer";
+
 import LandingPage from "./Pages/LandingPage";
 import { Route, Routes } from "react-router-dom";
 
@@ -12,8 +12,8 @@ function App() {
       <NavbarDemo />
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/blog" element={<BlogPage />} /> */}
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }

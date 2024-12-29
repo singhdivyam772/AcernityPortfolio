@@ -16,18 +16,18 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="md:px-20 px-4 md:pb-20 md:pt-8 ">
-      <p className=" text-blue-500 hidden md:flex  lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
+    <div className="md:px-20 px-4 md:pb-20 md:pt-8 md:py-0 pb-12  ">
+      <p className=" text-blue-500 hidden md:flex lg:text-4xl text-xl md:pl-14 lg:py-4 lg:font-semibold">
         Contact Us
       </p>
       <div className="max-w-3xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input  shadow-xl shadow-blue-400  bg-black">
         <h2 className="font-bold text-center py-4 md:text-2xl text-xl text-neutral-200">
-          Let’s Create Something Amazing Together
+          Let’s Create Something Amazing Together{" "}
+          <span className=" text-xl">✌️</span>
         </h2>
         <p className="text-sm mt-2 text-center py-2 text-neutral-300">
           Submit the form below to get in touch. I’ll get back to you as soon as
           possible.
-          <span className=" text-xl">✌️</span>
         </p>
 
         <form className="my-8" onSubmit={handleSubmit}>

@@ -86,10 +86,10 @@ const navData = [
       },
     ],
   },
-  {
-    id: 2,
-    mainNav: "Blogs",
-    mainLink: "/",
-    subMenu: [], // Empty submenu
-  },
+  // {
+  //   id: 2,
+  //   mainNav: "Blogs",
+  //   mainLink: "/",
+  //   subMenu: [], // Empty submenu
+  // },
 ];

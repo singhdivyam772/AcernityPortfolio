@@ -64,7 +64,7 @@ const ProjectSection = () => {
   return (
     <div className="md:px-20 px-4 pb-20 pt-8">
       <p className="text-blue-500 lg:text-4xl text-xl md:pl-14 lg:py-6 py-4 lg:font-semibold">
-        Experience
+        Projects
       </p>
       <StickyScroll content={content} />
     </div>
